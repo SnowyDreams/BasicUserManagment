@@ -43,5 +43,9 @@ namespace second_attempt.View
             viewModel.SetEditedUser(randomName.SelectedItems.Cast<Model.User>().ToList(), NewUserButton);
         }
 
+        private void Button_CloseGaps(object sender, RoutedEventArgs e)
+        {
+            viewModel.CloseGaps();
+        }
     }
 }

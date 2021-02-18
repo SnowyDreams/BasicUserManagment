@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using second_attempt.Model;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
+
+
 namespace second_attempt.View_Model
 {
     class ViewModel : INotifyPropertyChanged
@@ -96,6 +99,13 @@ namespace second_attempt.View_Model
             }
 
 
+        }
+        public void CloseGaps()
+        {
+            foreach (User user in usersList)
+            {
+                user.UserID = usersList.IndexOf(user) + 1;
+            }
         }
 
         private int NewUserID()

@@ -38,6 +38,7 @@
             <Button x:Name="NewUserButton" Grid.Row="2" Grid.Column="2" Margin="10,0" Content="Add User" Click="Button_AddOrEditUser"></Button>
 
             <!-- ROW 4 -->
+            <Button Grid.Row="4" Grid.Column="2" Margin="10,0" Content="Close Gaps" Click="Button_CloseGaps"></Button>
             <Button Grid.Row="4" Grid.Column="3" Margin="10,0" Content="Edit User" Click="Button_EditUser"></Button>
             <Button Grid.Row="4" Grid.Column="4" Margin="10,0" Content="Delete Users" Click="Button_DeleteUsers"></Button>
         </Grid>
